@@ -1,0 +1,69 @@
+:root {
+    color-scheme: light dark;
+    /*
+    #3c3c3c
+    #003755
+    #f5c31e
+    #00aff5
+    #ff6847
+    #f05096
+    #262547
+    #f4707c
+    #edebe6
+    #f7f5f1
+    #ffffff
+  */
+    --lt-contrast: #1c1c1c;
+    --dk-contrast: #f7f5f1;
+
+    --pink: #f05096;
+    --darkpurple: #262547;
+
+    /* Tema Claro */
+    --light-primary: var(--darkpurple);
+    --light-accent: var(--pink);
+    --light-fg: #3c3c3c;
+    --light-bg: #edebe6;
+    --light-bg-alpha: var(--dk-contrast);
+    --light-surface: #ffffff;
+    --light-surface-alpha: #ffffff88;
+
+    --light-active: var(--darkpurple);
+    --light-level: #0000004d;
+    --light-hover: #f5c31e;
+    --light-overlay: #003755;
+
+    /* Tema Escuro */
+    --dark-primary: var(--darkpurple);
+    --dark-accent: var(--pink);
+    --dark-fg: var(--dk-contrast);
+    --dark-bg: var(--lt-contrast);
+    --dark-bg-alpha: #1c1c1cc0;
+    --dark-surface: #2e2e2e;
+    --dark-surface-alpha: #2e2e2e88;
+
+    --dark-active: #00005e;
+    --dark-level: #ffffff4d;
+    --dark-hover: #e0ffff;
+    --dark-overlay: #2f4f4f;
+
+    /* Transição */
+    --transition: 0.1s;
+}
+
+
+.light {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+body.dark-theme {
+    color-scheme: dark;
+}
+
+body.light-theme {
+    color-scheme: light;
+}

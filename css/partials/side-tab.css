@@ -1,0 +1,98 @@
+/*Fun begins*/
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+}
+
+.tab-input,
+.tab-content {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+.tab-label {
+  display: block;
+  float: left;
+  background: transparent;
+  color: var(--lt-contrast);
+  border-color: var(--lightblue) !important;
+}
+
+#tab1:checked ~ .tab-navigation-panel .tab-label[for="tab1"],
+#tab2:checked ~ .tab-navigation-panel .tab-label[for="tab2"],
+#tab3:checked ~ .tab-navigation-panel .tab-label[for="tab3"],
+#tab4:checked ~ .tab-navigation-panel .tab-label[for="tab4"] {
+  background: var(--lightblue);
+  color: var(--dk-contrast);
+  border-color: var(--lightblue);
+}
+
+#tab1:checked ~ .tab-content-wrapper #content1,
+#tab2:checked ~ .tab-content-wrapper #content2,
+#tab3:checked ~ .tab-content-wrapper #content3,
+#tab4:checked ~ .tab-content-wrapper #content4 {
+  display: block;
+  background: light-dark(var(--light-surface), var(--dark-surface));
+  color: light-dark(var(--light-fg), var(--dark-fg));
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeIn 300ms ease-in-out;
+  -moz-animation: fadeIn 300ms ease-in-out;
+  animation: fadeIn 300ms ease-in-out;
+}
+
+.tab_container [id^="tab"]:checked + .tab-label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + .tab-label .fa {
+  color: #0CE;
+}
+
+.tab-label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 930px) {
+  .tab-label span {
+    /* font-size: 14px; */
+  }
+  .tab-label .fa {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tab-label span {
+    /* display: none; */
+  }
+
+  .tab-label .fa {
+    font-size: 16px;
+  }
+
+  .tab_container {
+    width: 98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeIn {
+  0% {
+    transform: translate(0, 5px);
+  	opacity: 0;
+  }
+  
+  100% {
+    transform: translate(0, 0px);
+  	opacity: 1;
+  }
+}
