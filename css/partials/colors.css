@@ -61,6 +61,6 @@
     border-color: var(--pink)!important;
 }
 
-.border-color-darkpurple {
-    border-color: var(--darkpurple);
+.border-color-darkpurple--force {
+    border-color: var(--darkpurple)!important;
 }
