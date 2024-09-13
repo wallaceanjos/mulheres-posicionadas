@@ -52,10 +52,10 @@
     color: light-dark(var(--dark-fg), var(--light-fg));
 }
 
-border-color-pink {
-    border-color: var(--pink);
+.border-color-pink {
+    border-color: var(--pink)!important;
 }
 
-border-color-darkpurple {
+.border-color-darkpurple {
     border-color: var(--darkpurple);
 }
