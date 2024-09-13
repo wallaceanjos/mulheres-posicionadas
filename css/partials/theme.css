@@ -18,6 +18,7 @@
 
     --pink: #f05096;
     --darkpurple: #262547;
+    --pink-alpha: #f0509633;
 
     /* Tema Claro */
     --light-primary: var(--darkpurple);

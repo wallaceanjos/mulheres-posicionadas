@@ -56,3 +56,14 @@ body {
         background: url(/images/img_section1.png) no-repeat calc(50% + 350px) center / contain, url(/images/bg_section1.jpg)no-repeat center center/ cover;
     }
 }
+@media screen and (min-width: 1024px){
+    .floating-card{
+        transform: translateX(-24px);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .floating-card{
+        transform: translateX(-48px);
+    }
+}

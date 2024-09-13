@@ -7,6 +7,11 @@
     background: var(--pink);
     color: var(--dk-contrast)
 }
+
+.pink-alpha {
+    background: var(--pink-alpha);
+    color: var(--dk-contrast)
+}
 /*  BACKGROUNDS */
 .transparent {
     background: transparent;
